@@ -20,11 +20,14 @@ But fear not, you can actually write React apps without ES6 and any of it's feat
 So let's open up our favorite IDE and our browser.
 I recommend (and use) VSC and Chrome.
 
-First thing you want to do is download then extract the React files into your working directory then include the React script into your HTML file, so something like this should work:
+First thing you want to do is [download] then extract the React files into your working directory then include the React script into your HTML file, so something like this should work:
 
 ```html
 <script type="text/javascript" src="js/react.js"></script>
+<script type="text/javascript" src="js/react-dom.js"></script>
 ```
+
+[download]: https://react-cn.github.io/react/downloads/react-0.14.3.zip
 
 By including react.js, you'll now have access to React, and all it's goodness.
 
@@ -139,6 +142,7 @@ In your index.html:
     <head>
         <title>React Tutorial CH1</title>
         <script type="text/javascript" src="js/react.js"></script>
+        <script type="text/javascript" src="js/react-dom.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
     <body>
