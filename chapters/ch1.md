@@ -143,10 +143,10 @@ In your index.html:
         <title>React Tutorial CH1</title>
         <script type="text/javascript" src="js/react.js"></script>
         <script type="text/javascript" src="js/react-dom.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
     </head>
     <body>
         <div id="container"></div>
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
 ```
