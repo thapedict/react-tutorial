@@ -154,22 +154,26 @@ In your index.html:
 In you app.js:
 
 ```js
-var hw_title = React.createElement('h1',{},'Hello, World!');
-var hw_desc = React.createElement('p',{},'My first React App');
+// Rule of Thumb: Always capitilize your components
+var Title = React.createElement('h1',{},'Hello, World!');
+var Desc = React.createElement('p',{},'My first React App');
 
-var hw = React.createClass({
+var HelloWorld = React.createClass({
     render:function(){
         // Notice how I create an element to wrap my Hello World title and desciption and return it.
         return React.createElement(
             'div',
             {},
-            hw_title,
-            hw_desc
+            Title,
+            Desc
         )
     }
 });
 
-ReactDOM.render( hw, document.getElementById('container') );
+ReactDOM.render(
+            React.createElement(HelloWorld),
+            document.getElementById('container')
+        );
 ```
 
 Phew!!! I know what you're thinking, *"all that coding for writing two lines of text onto a screen? I'm never doing that again"*.
