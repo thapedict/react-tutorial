@@ -22,4 +22,4 @@ The list is not as big as you think, but significant.
 
 ### Arrow functions
 
-Yes, I'll start of with my favorite. 
+Yes, I'll start of with my favorite Arrow functions.
