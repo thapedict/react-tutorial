@@ -5,19 +5,19 @@
 
 Over the past couple of days I've been giving React a go trying to understand the library as a whole. As complex as it was, there was really no easier way to learn it.
 
-Now if you are coming from a world before ES6 (like me), some concepts will be easy to grasp, and some will required a few trial and errors. Because unlike other previous libraries, React isn't just about learning some function names, and how they work. It's a complete mindshift from how we used to write apps using JavaScript libraries.
+Now if you are coming from a world before ES6 (like me), some concepts will be easy to grasp, and some will required a few trial and errors. Because unlike other previous libraries, React isn't just about learning some function names, and how they work. It's a complete mind shift from how we used to write apps using JavaScript libraries.
 
 ## What's the deal with ES6
 
-ECMAScript 2015 or ES6 for short, was a new standard (version) of JavaScript introduce back in 2015. With it brought a lot of change to how we write Javascript. These *change* included (but not limited to), new syntax, a way to declare a real class (like you would in other programming langauges such as Java or C#), new functions to built-in objects (such as Array and String), modular design coding, and something called promises. (**And in comes the real 'steep learning curve' that everyone talks about when learning React**).
+ECMAScript 2015 or ES6 for short, was a new standard (version) of JavaScript introduce back in 2015. With it brought a lot of change to how we write JavaScript. These *change* included (but not limited to), new syntax, a way to declare a real class (like you would in other programming languages such as Java or C#), new functions to built-in objects (such as Array and String), modular design coding, and something called promises. (**And in comes the real 'steep learning curve' that everyone talks about when learning React**).
 
-It's so important to understand this from the start that if you are coming from a pre ES6 era and want to write React apps, you have to throw away most (if not all) of the things we learned about developing in JavaScript. It's just the nature of how the library is setup, so don't beat yourself up if you don't get it at first.
+It's so important to understand this from the start that if you are coming from a pre ES6 era and want to write React apps, you have to throw away most (if not all) of the things we learned about developing in JavaScript. It's just the nature of how the library is set-up, so don't beat yourself up if you don't get it at first.
 
 But fear not, you can actually write React apps without ES6 and any of it's features, but just know that will cost you a lot of typing hours. So before we get into the real fancy stuff of ES6, let's try it the 'old fashion way', with plain (or as they call it now 'Vanilla') JavaScript.
 
 ## Getting Started
 
-So let's open up our favorite IDE and our browser.
+So let's open up our favourite IDE and our browser.
 I recommend (and use) VSC and Chrome.
 
 First thing you want to do is [download] then extract the React files into your working directory then include the React script into your HTML file, so something like this should work:
@@ -65,12 +65,12 @@ React.createElement('div',{},'Hello, World!');
 
 Calling the above function will return a React element.
 A React element is a special type of HTML element which is manage (i.e. created, displayed, updated, and deleted) by the React engine.
-We'll get more indepth about React elements vs HTML elements later.
+We'll get more in-depth about React elements vs. HTML elements later.
 
 ### React.createClass
 
-createClass is a special kind of factory function that returns a React class (which in many instances will be refered to as a Component).
-For the puropse of this Book we'll refer to all things created with this function as a Component.
+createClass is a special kind of factory function that returns a React class (which in many instances will be referred to as a Component).
+For the purpose of this Book we'll refer to all things created with this function as a Component.
 React Components have much more functionality than you're average React element.
 
 ```js
@@ -92,7 +92,7 @@ React.createClass({
 ```
 
 > Note: All React classes (components) need to have a render function.
-A render function gets called by React when it trys to render (output) the component on the screen.
+A render function gets called by React when it tries to render (output) the component on the screen.
 The render function needs to return an react element so it can be shown on screen, or in the rare case return null if it don't render anything.
 
 ### ReactDOM.render
@@ -115,7 +115,7 @@ Parameter   | Type
 element     | reactElement / ReactClass
 domNode     | HTML DOM element that will be used as a parent for the element
 
-Real-life usecase:
+Real-life use-case:
 
 ```js
 ReactDOM.render(
